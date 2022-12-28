@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'COCOGOOSE Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('COCOGOOSE Regular'), url(./fonts/cocogoose_trial.woff) format('woff');
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: aquamarine;
+}
+
+/* -- Settings Bar -- */
+
+#settings_bar {
+  background-color: #272a31;
+  display: none;
+}
+
+#settings_container {
+  margin: auto;
+  width: 80%;
+}
+
+#settings_bar ul {
+  display: flex;
+  color: #fff;
+  list-style: none;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+#settings_bar ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#settings_bar ul li {
+  padding: 8px;
+}
+
+/* -- Nav Bar -- */
+
+#nav_bar {
+  background-color: #fff;
+  display: none;
+}
+
+#nav_bar_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+#page_logo {
+  display: flex;
+}
+
+#nav_bar ul {
+  list-style: none;
+  display: flex;
+  width: 45%;
+  font-size: 14px;
+  text-align: center;
+}
+
+#nav_bar ul li {
+  width: 20%;
+  margin: auto;
+}
+
+#nav_bar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#campaing_btn {
+  border: 5px solid #ec5242;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* -- Welcome Section */
+
+#welcome_section {
+  background-color: lightgray;
+  padding: 35px 0;
+}
+
+#welcome_section article {
+  width: 90%;
+  margin: auto;
+}
+
+#title_intro {
+  font-size: 5vw;
+  color: #ec5242;
+}
+
+#welcome_section h1 {
+  font-size: 7vw;
+  font-family: 'COCOGOOSE Regular', sans-serif;
+  line-height: 7vw;
+}
+
+#title_subtext {
+  border: 2px solid #fff;
+  padding: 18px;
+  font-size: 3vw;
+}
+
+#welcome_section h2 {
+  font-size: 5vw;
+  font-family: 'COCOGOOSE Regular', sans-serif;
+}
+#title_location {
+  font-size: 3.5vw;
+}
+
+/* -- Main Program -- */
+
+#program_section {
+  background-color: #272a31;
+  padding: 30px 0;
+}
+
+#program_section article {
+  width: 90%;
+  margin: auto;
+}
+
+#program_section article h1 {
+  color: #fff;
+  font-size: 4.5vw;
+  margin: auto;
+  text-align: center;
+}
+
+#program_section article ul {
+  width: 100%;
+}
+
+#program_section article ul li {
+  display: flex;
+  background-color: darkslategray;
+  margin: 10px 0;
+  padding: 15px;
+}
+
+#program_section article ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+#program_section article ul li h3 {
+  color: #ec5242;
+  padding: 0 15px;
+}
+
+#program_section article ul li p {
+  color: #fff;
+  font-size: 3vw;
+}
+
+#full_program {
+  display: none;
+}
+
+#join_btn {
+  background-color: #ec5242;
+  color: #fff;
+  width: 80%;
+  margin: 25px auto 0 auto;
+}
+
+#join_btn h2 {
+  font-size: 4vw;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* -- Speakers Section --*/
+
+/* -- Footer Section --*/
+
+#footer {
+  background-color: #272a31;
+  color: #fff;
+}
+
+#footer article {
+  width: 90%;
+  margin: auto;
+}
+
+#footer h2 {
+  text-align: center;
+}
+
+#footer ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#footer ul li {
+  display: flex;
+  padding: 10px 0;
+}
+
+#footer ul li img {
+  width: 100px;
+}

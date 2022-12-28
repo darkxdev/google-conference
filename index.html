@@ -5,13 +5,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js"></script>
+
+  <script src="https://kit.fontawesome.com/773702659e.js" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+  </style>
+
   <title>Microverse Capstone 1</title>
 </head>
 
 <body>
-  
+  <header>
+    <nav id="settings_bar">
+      <div id="settings_container">
+        <ul id="settings">
+          <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          <li><a href="#"><img src="imgs/twitter_logo.svg" width="15px" height="15px" alt="twitter logo"></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="nav_bar">
+      <div id="nav_bar_container">
+        <img id="page_logo" src="./imgs/page_logo.svg" width="50px" height="50px" alt="page logo">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+        <a id="campaing_btn" href="#">
+          <div>CC Campaing</div>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section" id="welcome_section">
+    <article>
+      <p id="title_intro">"Hello! Sharing world"</p>
+      <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+      <p id="title_subtext">A joyful celebration believing in the value of openness and sharing, creating a positive
+        change with people from over 80 contries is taking place in October, in Korea.</p>
+      <h2>2015.10.15(THU) ~ 16(FRI)</h2>
+      <p id="title_location">@ National Museum of Korea, Art Center Nabi and more</p>
+    </article>
+  </section>
+
+  <section class="section" id="program_section">
+    <article>
+      <h1>Main Program</h1>
+      <ul>
+        <li>
+          <img src="./imgs/lecturer_icon.svg" alt="lecturer icon">
+          <h3>Lecture</h3>
+          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+        </li>
+        <li><img src="./imgs/lecturer_icon.svg" alt="lecturer icon">
+          <h3>Lecture</h3>
+          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+        </li>
+        <li><img src="./imgs/lecturer_icon.svg" alt="lecturer icon">
+          <h3>Lecture</h3>
+          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+        </li>
+        <li><img src="./imgs/lecturer_icon.svg" alt="lecturer icon">
+          <h3>Lecture</h3>
+          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+        </li>
+        <li><img src="./imgs/lecturer_icon.svg" alt="lecturer icon">
+          <h3>Lecture</h3>
+          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+        </li>
+      </ul>
+      <p id="full_program">SEE THE WHOLE PROGRAM</p>
+      <div id="join_btn">
+        <h2>Join CC Global Summit 2015</h2>
+      </div>
+
+    </article>
+  </section>
+
+  <!-- Start of section dynamically created with JS -->
+
+  <section class="section" id="speakers_section">
+  </section>
+
+  <!-- End of section dynamically created with JS -->
+
+  <section class="section" id="footer">
+    <article>
+        <h2>Partner</h2>
+        <ul>
+          <li><img src="./imgs/mozilla_logo.svg" alt=""></li>
+          <li><img src="./imgs/google_logo.svg" alt=""></li>
+          <li><img src="./imgs/naver_icon.svg" alt=""></li>
+          <li><img src="./imgs/tesla_logo.svg" alt=""></li>
+          <li><img src="./imgs/airbnb_logo.svg" alt=""></li>
+        </ul>
+    </article>
+    <article id="copyright">
+      <div id="copyright_container">
+        <img src="" alt="">
+        <p>2015 Creative Commons Korea. Some Rights Reserved<br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book.</p>
+      </div>
+    </article>
+  </section>
+
 </body>
 
 </html>
