@@ -121,6 +121,7 @@ body {
   font-size: 5vw;
   font-family: 'COCOGOOSE Regular', sans-serif;
 }
+
 #title_location {
   font-size: 3.5vw;
 }
@@ -187,9 +188,9 @@ body {
   padding: 25px 0;
 }
 
-/* -- Speakers Section --*/
+/* -- Speakers Section -- */
 
-/* -- Footer Section --*/
+/* -- Footer Section -- */
 
 #footer {
   background-color: #272a31;
