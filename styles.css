@@ -26,16 +26,18 @@ body {
   color: #fff;
   list-style: none;
   justify-content: flex-end;
-  font-size: 12px;
+  font-size: 15px;
+  align-items: center;
 }
 
 #settings_bar ul a {
   color: #fff;
   text-decoration: none;
+  display: flex;
 }
 
 #settings_bar ul li {
-  padding: 8px;
+  padding: 12px 0 12px 12px;
 }
 
 /* -- Nav Bar -- */
@@ -80,6 +82,7 @@ body {
   padding: 10px;
   text-decoration: none;
   color: #000;
+  box-sizing: border-box;
 }
 
 #mobile_menu {
@@ -258,13 +261,12 @@ body {
 #copyright {
   width: 90%;
   display: flex;
-  margin: 15px auto;
+  margin: 5vw auto;
 }
 
 #copyright img {
   width: 45%;
-  height: 75px;
-  padding: 10px;
+  padding: 0 15vw;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -272,8 +274,7 @@ body {
 
 #reserved_rights {
   width: 55%;
-  font-size: 3.2vw;
-  height: 75px;
+  font-size: 2.5vw;
   display: flex;
   align-items: center;
 }
@@ -368,5 +369,161 @@ body {
 }
 
 @media (min-width: 768px) {
-  
+
+  .article {
+    width: 80%;
+  }
+
+  #mobile_menu {
+    display: none;
+  }
+
+  #settings_bar {
+    display: block;
+  }
+
+  #nav_bar {
+    display: block;
+    filter: drop-shadow();
+    -webkit-filter: drop-shadow(0 -2px 5px #00000050);
+  }
+
+  /* -- Welcome Section -- */
+
+  #welcome_section {
+    padding-bottom: 12vw;
+  }
+
+  .title_intro {
+    font-size: 52px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 78px;
+    line-height: 82px;
+  }
+
+  #title_subtext {
+    width: 58%;
+    padding: 25px;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0 35px 0;
+    line-height: 30px;
+    border-width: 5px;
+  }
+
+  #welcome_section h2 {
+    font-size: 40px;
+  }
+
+  #title_location {
+    font-size: 25px;
+    margin: 8px auto 0 auto;
+  }
+
+  /* -- Program Section -- */
+
+  #program_section {
+    padding: 60px 0;
+  }
+
+  #program_section article {
+    width: 80%;
+  }
+
+  #program_section article h1 {
+    font-size: 32px;
+    padding: 15px;
+  }
+
+  #program_section article ul {
+    display: flex;
+    margin: 60px auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #program_section article ul li {
+    flex-direction: column;
+    padding: 35px 15px;
+    width: 19.5%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #program_section article ul li img {
+    width: auto;
+    height: 35px;
+  }
+
+  #program_section article ul li h3 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  #program_section article ul li p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  #full_program {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #join_btn {
+    display: none;
+  }
+
+  /* -- Speakers Section -- */
+
+  /* -- Footer Section -- */
+
+  #partners_background {
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  #partners {
+    width: 80%;
+  }
+
+  #partners h2 {
+    font-size: 32px;
+    padding: 15px 0 30px 0;
+  }
+
+  #partners ul {
+    flex-wrap: nowrap;
+    margin: 30px auto;
+    justify-content: space-between;
+  }
+
+  #partners ul li {
+    padding: 15px 0;
+    width: 15%;
+  }
+
+  #partners ul li img {
+    width: 100%;
+  }
+
+  #copyright {
+    margin: 80px auto;
+  }
+
+  #copyright img {
+    width: auto;
+    height: 70px;
+  }
+
+  #reserved_rights {
+    font-size: 20px;
+  }
 }
