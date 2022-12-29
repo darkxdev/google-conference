@@ -3,16 +3,8 @@
   padding: 0;
 }
 
-@font-face {
-  font-family: 'COCOGOOSE Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('COCOGOOSE Regular'), url(./fonts/cocogoose_trial.woff) format('woff');
-}
-
 body {
   font-family: 'Lato', sans-serif;
-  background-color: aquamarine;
 }
 
 /* -- Settings Bar -- */
@@ -47,7 +39,7 @@ body {
 /* -- Nav Bar -- */
 
 #nav_bar {
-  background-color: #fff;
+  background-color: #f5f5f5;
   display: none;
 }
 
@@ -88,10 +80,29 @@ body {
   color: #000;
 }
 
-/* -- Welcome Section */
+#mobile_menu {
+  background-color: #f5f5f5;
+}
+
+#burguer_container {
+  width: 90%;
+  margin: auto;
+  padding: 15px 0 0 0;
+}
+
+#mobile_menu img {
+  width: 30px;
+  height: 30px;
+}
+
+#mobile_menu ul {
+  display: none;
+}
+
+/* -- Welcome Section -- */
 
 #welcome_section {
-  background-color: lightgray;
+  background-color: #f5f5f5;
   padding: 35px 0;
 }
 
@@ -103,30 +114,35 @@ body {
 #title_intro {
   font-size: 5vw;
   color: #ec5242;
+  margin: 0 auto 10px auto;
 }
 
 #welcome_section h1 {
-  font-size: 7vw;
-  font-family: 'COCOGOOSE Regular', sans-serif;
-  line-height: 7vw;
+  font-size: 8vw;
+  font-family: 'COCOGOOSE', sans-serif;
+  line-height: 8vw;
+  color: #ec5242;
 }
 
 #title_subtext {
   border: 2px solid #fff;
-  padding: 18px;
+  padding: 15px;
   font-size: 3vw;
+  margin: 20px auto;
 }
 
 #welcome_section h2 {
-  font-size: 5vw;
-  font-family: 'COCOGOOSE Regular', sans-serif;
+  font-size: 6vw;
+  font-family: 'COCOGOOSE', sans-serif;
+  color: darkslategrey;
 }
 
 #title_location {
   font-size: 3.5vw;
+  margin: 5px auto;
 }
 
-/* -- Main Program -- */
+/* -- Program Section -- */
 
 #program_section {
   background-color: #272a31;
@@ -141,29 +157,33 @@ body {
 #program_section article h1 {
   color: #fff;
   font-size: 4.5vw;
-  margin: auto;
+  padding: 15px 0;
   text-align: center;
+  border-bottom: 1px solid #ec5242;
 }
 
 #program_section article ul {
   width: 100%;
+  margin-top: 30px;
 }
 
 #program_section article ul li {
   display: flex;
-  background-color: darkslategray;
+  background-color: #3c3f4680;
   margin: 10px 0;
   padding: 15px;
+  align-items: center;
 }
 
 #program_section article ul li img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 #program_section article ul li h3 {
   color: #ec5242;
-  padding: 0 15px;
+  padding: 0 25px;
+  font-size: 4vw;
 }
 
 #program_section article ul li p {
@@ -192,33 +212,65 @@ body {
 
 /* -- Footer Section -- */
 
-#footer {
+#partners_background {
   background-color: #272a31;
-  color: #fff;
+  padding: 45px 0;
 }
 
-#footer article {
+#partners {
+  color: #fff;
   width: 90%;
   margin: auto;
 }
 
-#footer h2 {
+#partners h2 {
   text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #ec5242;
+  font-size: 5vw;
 }
 
-#footer ul {
+#partners ul {
   width: 100%;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 40px auto 0 auto;
 }
 
-#footer ul li {
+#partners ul li {
   display: flex;
   padding: 10px 0;
 }
 
-#footer ul li img {
-  width: 100px;
+#partners ul li img {
+  width: 85px;
+}
+
+#copyright_background {
+  background-color: #fff;
+}
+
+#copyright {
+  width: 90%;
+  display: flex;
+  margin: 15px auto;
+}
+
+#copyright img {
+  width: 45%;
+  height: 75px;
+  padding: 10px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+#reserved_rights {
+  width: 55%;
+  font-size: 3.2vw;
+  height: 75px;
+  display: flex;
+  align-items: center;
 }

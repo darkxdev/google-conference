@@ -12,6 +12,7 @@
   <script src="https://kit.fontawesome.com/773702659e.js" crossorigin="anonymous"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/cocogoose');
   </style>
 
   <title>Microverse Capstone 1</title>
@@ -45,6 +46,19 @@
           <div>CC Campaing</div>
         </a>
       </div>
+    </nav>
+
+    <nav id="mobile_menu">
+      <div id="burguer_container">
+        <img src="./imgs/bars_icon.svg" alt="mobile menu" id="mobile_icon">
+      </div>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </nav>
   </header>
 
@@ -101,7 +115,8 @@
   <!-- End of section dynamically created with JS -->
 
   <section class="section" id="footer">
-    <article>
+    <div id="partners_background">
+      <article id="partners">
         <h2>Partner</h2>
         <ul>
           <li><img src="./imgs/mozilla_logo.svg" alt=""></li>
@@ -110,16 +125,15 @@
           <li><img src="./imgs/tesla_logo.svg" alt=""></li>
           <li><img src="./imgs/airbnb_logo.svg" alt=""></li>
         </ul>
-    </article>
-    <article id="copyright">
-      <div id="copyright_container">
-        <img src="" alt="">
-        <p>2015 Creative Commons Korea. Some Rights Reserved<br>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-          make a type specimen book.</p>
-      </div>
-    </article>
+      </article>
+    </div>
+    <div id="copyright_background">
+      <article id="copyright">
+        <img src="./imgs/cc_logo.svg" alt="">
+        <p id="reserved_rights">2015 Creative Commons Korea.<br>
+          Some Rights Reserved</p>
+      </article>
+    </div>
   </section>
 
 </body>
