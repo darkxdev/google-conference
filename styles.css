@@ -7,6 +7,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/* MAIN PAGE */
+
 /* -- Settings Bar -- */
 
 #settings_bar {
@@ -87,12 +89,12 @@ body {
 #burguer_container {
   width: 90%;
   margin: auto;
-  padding: 15px 0 0 0;
+  padding: 5vw 0 0 0;
 }
 
-#mobile_menu img {
-  width: 30px;
-  height: 30px;
+#burguer_container img {
+  width: 10vw;
+  height: 10vw;
 }
 
 #mobile_menu ul {
@@ -103,21 +105,21 @@ body {
 
 #welcome_section {
   background-color: #f5f5f5;
-  padding: 35px 0;
+  padding: 10vw 0 20vw 0;
 }
 
-#welcome_section article {
+.article {
   width: 90%;
   margin: auto;
 }
 
-#title_intro {
+.title_intro {
   font-size: 5vw;
   color: #ec5242;
   margin: 0 auto 10px auto;
 }
 
-#welcome_section h1 {
+.title {
   font-size: 8vw;
   font-family: 'COCOGOOSE', sans-serif;
   line-height: 8vw;
@@ -126,9 +128,10 @@ body {
 
 #title_subtext {
   border: 2px solid #fff;
-  padding: 15px;
+  padding: 5vw;
   font-size: 3vw;
-  margin: 20px auto;
+  line-height: 5vw;
+  margin: 8vw auto;
 }
 
 #welcome_section h2 {
@@ -146,7 +149,7 @@ body {
 
 #program_section {
   background-color: #272a31;
-  padding: 30px 0;
+  padding: 10vw 0;
 }
 
 #program_section article {
@@ -157,32 +160,32 @@ body {
 #program_section article h1 {
   color: #fff;
   font-size: 4.5vw;
-  padding: 15px 0;
+  padding: 6vw 0;
   text-align: center;
   border-bottom: 1px solid #ec5242;
 }
 
 #program_section article ul {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 12vw;
 }
 
 #program_section article ul li {
   display: flex;
   background-color: #3c3f4680;
   margin: 10px 0;
-  padding: 15px;
+  padding: 5vw;
   align-items: center;
 }
 
 #program_section article ul li img {
-  width: 30px;
+  width: 15%;
   height: 30px;
 }
 
 #program_section article ul li h3 {
   color: #ec5242;
-  padding: 0 25px;
+  padding: 0 5vw;
   font-size: 4vw;
 }
 
@@ -199,13 +202,13 @@ body {
   background-color: #ec5242;
   color: #fff;
   width: 80%;
-  margin: 25px auto 0 auto;
+  margin: 10vw auto 0 auto;
 }
 
 #join_btn h2 {
   font-size: 4vw;
   text-align: center;
-  padding: 25px 0;
+  padding: 6vw 0;
 }
 
 /* -- Speakers Section -- */
@@ -214,7 +217,7 @@ body {
 
 #partners_background {
   background-color: #272a31;
-  padding: 45px 0;
+  padding: 10vw 0;
 }
 
 #partners {
@@ -236,16 +239,16 @@ body {
   list-style: none;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin: 40px auto 0 auto;
+  margin: 10vw auto 5vw auto;
 }
 
 #partners ul li {
   display: flex;
-  padding: 10px 0;
+  padding: 2vw 3vw;
 }
 
 #partners ul li img {
-  width: 85px;
+  width: 22vw;
 }
 
 #copyright_background {
@@ -273,4 +276,97 @@ body {
   height: 75px;
   display: flex;
   align-items: center;
+}
+
+/* ABOUT PAGE */
+
+/* -- About Section */
+
+#about_section {
+  background-color: #f5f5f5;
+}
+
+#about_article {
+  text-align: center;
+  padding: 10vw 0;
+}
+
+#about_article h1 {
+  font-size: 7vw;
+}
+
+#contact_description {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  padding: 4vw;
+  margin: 10vw auto 5vw 0;
+  font-size: 3vw;
+  line-height: 5vw;
+}
+
+#contact_message {
+  font-size: 2.9vw;
+  line-height: 5vw;
+}
+
+#contact_email {
+  font-size: 3vw;
+  margin: 5px auto;
+  text-decoration: underline;
+}
+
+/* -- Summit Section Logo -- */
+
+#summit_logo {
+  border-bottom: 1px solid lightgrey;
+}
+
+#summit_article {
+  text-align: center;
+  padding: 6vw 0;
+}
+
+.about_article_h1 {
+  padding: 2vw 0;
+  font-size: 5vw;
+  line-height: 8vw;
+}
+
+.summit_article_p {
+  font-size: 3vw;
+  margin: 4vw auto;
+  line-height: 5vw;
+}
+
+#summit_article img {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 7vw 15vw;
+  box-sizing: border-box;
+  margin: 5vw auto;
+}
+
+/* -- Past Summits Section -- */
+
+#article_past {
+  text-align: center;
+  padding: 6vw 0 12.5vw 0;
+}
+
+#list_past {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#list_past li {
+  margin-bottom: 4vw;
+}
+
+#list_past img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  
 }
