@@ -182,7 +182,7 @@ body {
 }
 
 #program_section article ul li img {
-  width: 15%;
+  width: 37.5px;
   height: 30px;
 }
 
@@ -525,5 +525,109 @@ body {
 
   #reserved_rights {
     font-size: 20px;
+  }
+
+  /* ABOUT PAGE */
+
+  /* -- About Section */
+
+  #about_section {}
+
+  #title_intro {}
+
+  #about_article .title_intro {
+    display: none;
+  }
+
+  #about_article h1 {
+    margin: auto;
+    font-size: 72px;
+    padding-bottom: 35px;
+  }
+
+  #contact_description {
+    font-size: 21px;
+    line-height: 42px;
+    margin: 35px auto;
+  }
+
+  #contact_message {
+    font-size: 21px;
+    line-height: normal;
+    margin: 10px auto;
+  }
+
+  #contact_email {
+    font-size: 21px;
+  }
+
+  /* -- Summit Section Logo -- */
+
+  #summit_logo {}
+
+  #summit_article {}
+
+  .about_article_h1 {
+    font-size: 35px;
+    line-height: normal;
+    padding: 20px 0;
+  }
+
+  .summit_article_p {
+    font-size: 21px;
+    margin: auto;
+    line-height: normal;
+    padding: 20px 0;
+  }
+
+  #summit_article img {
+    width: 680px;
+    padding: 0;
+  }
+
+  /* -- Past Summits Section -- */
+
+  #article_past {}
+
+  #list_past {
+    margin: 80px auto 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #list_past li {
+    margin: 0;
+    width: 49%;
+    display: flex;
+  }
+
+  #list_past img {
+    width: 100%;
+  }
+
+  /* -- Footer Section -- */
+
+  #partners_background {
+    display: none;
+  }
+
+  #copyright_background {
+    background-color: #272a31;
+    padding: 75px 0;
+  }
+
+  #copyright {
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  #copyright img {
+    content: url(./imgs/cc_logo_white.svg);
+  }
+
+  #reserved_rights {
+    color: #fff;
+    font-size: 18px;
   }
 }
