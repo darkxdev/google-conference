@@ -27,19 +27,48 @@ window.onload = () => {
   },
 
   {
-    name: 'Aasda Benkler',
-    picture: './imgs/speaker_01.svg',
-    title: 'Aasdas Professor',
-    info: 'Aasda studies commons-based',
+    name: 'Kilnam Chon',
+    picture: './imgs/speaker_02.svg',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    info: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
   },
+
+  {
+    name: 'SohYeong Noh',
+    picture: './imgs/speaker_03.svg',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    info: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
+  },
+
+  {
+    name: 'Julia Leda',
+    picture: './imgs/speaker_04.svg',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    info: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
+  },
+
+  {
+    name: 'Lila Tretikov',
+    picture: './imgs/speaker_05.svg',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    info: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
+  },
+
+  {
+    name: 'Ryan Merkley',
+    picture: './imgs/speaker_06.svg',
+    title: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
+    info: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
+  },
+
   ];
 
-  function createGrid(rows, columns) {
+  function createGrid(cells) {
 
     const section = document.getElementById('speakers_section');
     const article = document.createElement('article');
-    section.appendChild(article);
     article.className = 'article'
+    section.appendChild(article);
 
     const title = document.createElement('h2');
     title.innerHTML = 'Featured Speakers';
@@ -49,23 +78,21 @@ window.onload = () => {
     speakersContainer.id = 'speakers_container';
     article.appendChild(speakersContainer);
 
-    for (let i = 0; i < rows; i++) {
-      for (let j = 0; j < columns; j++) {
+    for (let i = 0; i < cells; i++) {
         let cell = document.createElement('div')
         cell.className = 'cell'
 
-        cell.innerHTML = `<img src = "${speakersObj[0].picture}">
+        cell.innerHTML = `<img src = "${speakersObj[i].picture}">
         <div>
-          <h1>${speakersObj[0].name}</h1>
-          <h3>${speakersObj[0].title}</h3>
-          <p>${speakersObj[0].info}</p>
+          <h1>${speakersObj[i].name}</h1>
+          <h3>${speakersObj[i].title}</h3>
+          <p>${speakersObj[i].info}</p>
         </div>`
 
         speakersContainer.appendChild(cell);
-      }
     }
 
   }
 
-  createGrid(2, 3);
+  createGrid(6);
 }
