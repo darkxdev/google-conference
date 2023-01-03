@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
+  <script src="./scripts.js"></script>
 
   <script src="https://kit.fontawesome.com/773702659e.js" crossorigin="anonymous"></script>
   <style>
@@ -34,9 +34,10 @@
 
     <nav id="nav_bar">
       <div id="nav_bar_container">
-        <img id="page_logo" src="./imgs/page_logo.svg" width="50px" height="50px" alt="page logo">
+        <a href="index.html"><img id="page_logo" src="./imgs/page_logo.svg" width="50px" height="50px"
+            alt="page logo"></a>
         <ul>
-          <li><a href="#">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Program</a></li>
           <li><a href="#">Join</a></li>
           <li><a href="#">Sponsor</a></li>
@@ -50,14 +51,16 @@
 
     <nav id="mobile_menu">
       <div id="burguer_container">
-        <img src="./imgs/bars_icon.svg" alt="mobile menu" id="mobile_icon">
+        <a><img src="./imgs/bars_icon.svg" id="burguer_icon" alt="mobile menu" id="mobile_icon"></a>
       </div>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a><img src="./imgs/closing_x_icon.svg" alt="mobile menu" id="mobile_icon"></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
       </ul>
     </nav>
   </header>

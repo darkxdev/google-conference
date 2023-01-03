@@ -18,7 +18,7 @@
   <title>Microverse Capstone 1</title>
 </head>
 
-<body>
+<body class="about_page">
   <header>
     <nav id="settings_bar">
       <div id="settings_container">
@@ -34,7 +34,7 @@
 
     <nav id="nav_bar">
       <div id="nav_bar_container">
-        <img id="page_logo" src="./imgs/page_logo.svg" width="50px" height="50px" alt="page logo">
+        <a href="index.html"><img id="page_logo" src="./imgs/page_logo.svg" width="50px" height="50px" alt="page logo"></a>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Program</a></li>
@@ -50,14 +50,16 @@
 
     <nav id="mobile_menu">
       <div id="burguer_container">
-        <img src="./imgs/bars_icon.svg" alt="mobile menu" id="mobile_icon">
+        <a><img src="./imgs/bars_icon.svg" id="burguer_icon" alt="mobile menu" id="mobile_icon"></a>
       </div>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a><img src="./imgs/closing_x_icon.svg" alt="mobile menu" id="mobile_icon"></a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Sponsor</a></li>
+        <li><a href="#">News</a></li>
       </ul>
     </nav>
   </header>
@@ -95,22 +97,10 @@
   </section>
 
   <section class="section" id="footer">
-    <div id="partners_background">
-      <article id="partners">
-        <h2>Partner</h2>
-        <ul>
-          <li><img src="./imgs/mozilla_logo.svg" alt=""></li>
-          <li><img src="./imgs/google_logo.svg" alt=""></li>
-          <li><img src="./imgs/naver_icon.svg" alt=""></li>
-          <li><img src="./imgs/tesla_logo.svg" alt=""></li>
-          <li><img src="./imgs/airbnb_logo.svg" alt=""></li>
-        </ul>
-      </article>
-    </div>
-    <div id="copyright_background">
+    <div id="copyright_background_about">
       <article id="copyright">
         <img src="./imgs/cc_logo.svg" alt="">
-        <p id="reserved_rights">2015 Creative Commons Korea. Some Rights Reserved</p>
+        <p id="reserved_rights"><strong>2015 Creative Commons Korea. Some Rights Reserved</strong></p>
       </article>
     </div>
   </section>

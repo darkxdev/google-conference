@@ -19,6 +19,7 @@ body {
 #settings_container {
   margin: auto;
   width: 80%;
+  max-width: 1100px;
 }
 
 #settings_bar ul {
@@ -49,6 +50,7 @@ body {
 
 #nav_bar_container {
   width: 80%;
+  max-width: 1100px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -85,6 +87,8 @@ body {
   box-sizing: border-box;
 }
 
+/* -- Mobile Menu -- */
+
 #mobile_menu {
   background-color: #f5f5f5;
 }
@@ -92,26 +96,52 @@ body {
 #burguer_container {
   width: 90%;
   margin: auto;
-  padding: 5vw 0 0 0;
+  display: block;
 }
 
 #burguer_container img {
   width: 10vw;
   height: 10vw;
+  padding: 5vw 0;
+  display: block;
+  float: none;
 }
 
 #mobile_menu ul {
   display: none;
+  position: fixed;
+  padding: 0 5.5% 0 5.5%;
+  list-style: none;
+  background-color: #272a31;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#mobile_menu ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5vw;
+}
+
+#mobile_menu ul li {
+  padding: 6vw 0;
+}
+
+#mobile_menu img {
+  height: 10vw;
 }
 
 /* -- Welcome Section -- */
 
 #welcome_section {
   background-color: #f5f5f5;
-  padding: 10vw 0 20vw 0;
+  padding: 5vw 0 20vw 0;
+  clear: both;
 }
 
 .article {
+  max-width: 1100px;
   width: 90%;
   margin: auto;
 }
@@ -120,6 +150,7 @@ body {
   font-size: 5vw;
   color: #ec5242;
   margin: 0 auto 10px auto;
+  padding-bottom: 2vw;
 }
 
 .title {
@@ -157,6 +188,7 @@ body {
 
 #program_section article {
   width: 90%;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -216,6 +248,53 @@ body {
 
 /* -- Speakers Section -- */
 
+#speakers_section article {
+  padding: 5vw 0;
+}
+
+#speakers_section h2 {
+  padding: 2vw 0;
+  text-align: center;
+  border-bottom: 1px solid #ec5242;
+  font-size: 30px;
+}
+
+#speakers_container {
+  max-width: 1100px;
+  display: block;
+  margin: 6vw 0;
+}
+
+.cell {
+  display: flex;
+  margin: 0 2vw 8vw 0;
+  align-items: flex-start;
+}
+
+.cell img {
+  margin-right: 25px;
+  box-sizing: border-box;
+  min-width: 30%;
+}
+
+.cell h1 {
+  padding-top: 1vw;
+  font-size: 28px;
+}
+
+.cell h3 {
+  font-size: 21px;
+  color: #ec5242;
+  padding: 15px 0;
+  font-style: italic;
+}
+
+.cell p {
+  font-size: 16px;
+  padding-top: 15px;
+  line-height: 21px;
+}
+
 /* -- Footer Section -- */
 
 #partners_background {
@@ -231,7 +310,7 @@ body {
 
 #partners h2 {
   text-align: center;
-  padding: 15px;
+  padding: 25px;
   border-bottom: 1px solid #ec5242;
   font-size: 5vw;
 }
@@ -252,6 +331,7 @@ body {
 
 #partners ul li img {
   width: 22vw;
+  max-width: 180px;
 }
 
 #copyright_background {
@@ -261,7 +341,8 @@ body {
 #copyright {
   width: 90%;
   display: flex;
-  margin: 5vw auto;
+  margin: auto;
+  padding: 5vw 0;
 }
 
 #copyright img {
@@ -366,6 +447,20 @@ body {
 
 #list_past img {
   width: 100%;
+}
+
+/* -- Footer About -- */
+
+#copyright_background_about {
+  background-color: #272a31;
+}
+
+#copyright_background_about img {
+  content: url(./imgs/cc_logo_white.svg);
+}
+
+#copyright_background_about p {
+  color: #d3d3d3;
 }
 
 @media (min-width: 768px) {
@@ -483,6 +578,54 @@ body {
 
   /* -- Speakers Section -- */
 
+  #speakers_section article {
+    padding: 72px 0;
+  }
+
+  #speakers_section h2 {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ec5242;
+  }
+
+  #speakers_container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+  }
+
+  .cell {
+    display: flex;
+    margin: 0 2vw 5vw 0;
+    align-items: flex-start;
+  }
+
+  .cell img {
+    margin-right: 25px;
+    box-sizing: border-box;
+    min-width: 175px;
+  }
+
+  .cell h1 {
+    padding-top: 1vw;
+    font-size: 21px;
+  }
+
+  .cell h3 {
+    font-size: 15px;
+    color: #ec5242;
+    padding: 10px 0;
+    font-style: italic;
+  }
+
+  .cell p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 10px;
+  }
+
+
   /* -- Footer Section -- */
 
   #partners_background {
@@ -515,7 +658,7 @@ body {
   }
 
   #copyright {
-    margin: 80px auto;
+    margin: auto;
   }
 
   #copyright img {
@@ -524,16 +667,12 @@ body {
   }
 
   #reserved_rights {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   /* ABOUT PAGE */
 
   /* -- About Section */
-
-  #about_section {}
-
-  #title_intro {}
 
   #about_article .title_intro {
     display: none;
@@ -563,10 +702,6 @@ body {
 
   /* -- Summit Section Logo -- */
 
-  #summit_logo {}
-
-  #summit_article {}
-
   .about_article_h1 {
     font-size: 35px;
     line-height: normal;
@@ -587,8 +722,6 @@ body {
 
   /* -- Past Summits Section -- */
 
-  #article_past {}
-
   #list_past {
     margin: 80px auto 0 auto;
     flex-direction: row;
@@ -605,29 +738,5 @@ body {
   #list_past img {
     width: 100%;
   }
-
-  /* -- Footer Section -- */
-
-  #partners_background {
-    display: none;
-  }
-
-  #copyright_background {
-    background-color: #272a31;
-    padding: 75px 0;
-  }
-
-  #copyright {
-    margin: auto;
-    justify-content: space-around;
-  }
-
-  #copyright img {
-    content: url(./imgs/cc_logo_white.svg);
-  }
-
-  #reserved_rights {
-    color: #fff;
-    font-size: 18px;
-  }
+  /* -- About Page Footer Section -- */
 }
