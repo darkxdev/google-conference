@@ -14,7 +14,6 @@ window.onload = () => {
     mMenu.style.display = 'none';
     mMenuIconImg.style.display = 'block';
     mMenuCloseIcon.style.float = 'none';
-
   });
 
   /* -- Dynamic HTML creation -- */
@@ -64,10 +63,9 @@ window.onload = () => {
   ];
 
   function createGrid(cells) {
-
     const section = document.getElementById('speakers_section');
     const article = document.createElement('article');
-    article.className = 'article'
+    article.className = 'article';
     section.appendChild(article);
 
     const title = document.createElement('h2');
@@ -78,21 +76,20 @@ window.onload = () => {
     speakersContainer.id = 'speakers_container';
     article.appendChild(speakersContainer);
 
-    for (let i = 0; i < cells; i++) {
-        let cell = document.createElement('div')
-        cell.className = 'cell'
+    for (let i = 0; i < cells; i += 1) {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
 
-        cell.innerHTML = `<img src = "${speakersObj[i].picture}">
+      cell.innerHTML = `<img src = "${speakersObj[i].picture}">
         <div>
           <h1>${speakersObj[i].name}</h1>
           <h3>${speakersObj[i].title}</h3>
           <p>${speakersObj[i].info}</p>
-        </div>`
+        </div>`;
 
-        speakersContainer.appendChild(cell);
+      speakersContainer.appendChild(cell);
     }
-
   }
 
   createGrid(6);
-}
+};
