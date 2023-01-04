@@ -72,6 +72,9 @@ window.onload = () => {
     title.innerHTML = 'Featured Speakers';
     article.appendChild(title);
 
+    const divider = document.createElement('hr');
+    article.appendChild(divider);
+
     const speakersContainer = document.createElement('div');
     speakersContainer.id = 'speakers_container';
     article.appendChild(speakersContainer);

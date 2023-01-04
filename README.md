@@ -8,12 +8,8 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Setup](#setup)
 - [👤 Author](#author)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -55,6 +51,10 @@
 You can checkout the running website here:
 
 - [Live Demo Link](https://darkxdev.github.io/)
+
+My presentation of the project in its current state:
+
+- [Presentation](https://www.loom.com/share/6391c30c744746eabbb4f4c61ec6effb)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +127,7 @@ If you like this project, please make sure to visit my page and checkout my othe
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank all the people who contributed with their tools for my learning, understanding, and building of this project.
+Original design idea by [Cindy Shin in Behance](https://darkxdev.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)<tra/p>
 
