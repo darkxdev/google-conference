@@ -773,7 +773,6 @@ hr {
     margin: 80px auto 0 auto;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
   }
 
   #copyright_background_about {
