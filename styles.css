@@ -1,0 +1,781 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* MAIN PAGE */
+
+/* -- Settings Bar -- */
+
+#settings_bar {
+  background-color: #272a31;
+  display: none;
+}
+
+#settings_container {
+  margin: auto;
+  width: 80%;
+  max-width: 1100px;
+}
+
+#settings_bar ul {
+  display: flex;
+  color: #fff;
+  list-style: none;
+  justify-content: flex-end;
+  font-size: 15px;
+  align-items: center;
+}
+
+#settings_bar ul a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+}
+
+#list_past li {
+  margin-bottom: 4vw;
+}
+
+#settings_bar ul li {
+  padding: 12px 0 12px 12px;
+}
+
+/* -- Nav Bar -- */
+
+#nav_bar {
+  background-color: #f5f5f5;
+  display: none;
+}
+
+#nav_bar_container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 2fr 0;
+  grid-template-rows: 1fr;
+  padding: 15px 0;
+}
+
+#page_logo {
+  display: flex;
+}
+
+#nav_bar ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  grid-area: 1 / 3 / 2 / 4;
+  max-width: 490px;
+}
+
+#nav_bar ul li {
+  width: 20%;
+  margin: auto;
+}
+
+#mobile_menu ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5vw;
+}
+
+#nav_bar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#campaing_btn {
+  border: 5px solid #ec5242;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+  grid-area: 1 / 5 / 2 / 6;
+  margin-left: 2vw;
+}
+
+/* -- Mobile Menu -- */
+
+#mobile_menu {
+  background-color: #f5f5f5;
+}
+
+#burguer_container {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.cell img {
+  margin-right: 25px;
+  box-sizing: border-box;
+  min-width: 30%;
+}
+
+#burguer_container img {
+  width: 10vw;
+  height: 10vw;
+  padding: 5vw 0;
+  display: block;
+  float: none;
+}
+
+#mobile_menu ul {
+  display: none;
+  position: fixed;
+  padding: 0 5.5% 0 5.5%;
+  list-style: none;
+  background-color: #272a31;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#mobile_menu ul li {
+  padding: 6vw 0;
+}
+
+#mobile_menu img {
+  height: 10vw;
+}
+
+/* -- Welcome Section -- */
+
+#welcome_section {
+  background: url(./imgs/bg_welcome_section.jpg) center repeat-x;
+  background-size: cover;
+  padding: 5vw 0 20vw 0;
+  clear: both;
+}
+
+.article {
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+}
+
+.title_intro {
+  font-size: 5vw;
+  color: #ec5242;
+  margin: 0 auto 10px auto;
+  padding-bottom: 2vw;
+}
+
+.title {
+  font-size: 8vw;
+  font-family: 'COCOGOOSE', sans-serif;
+  line-height: 8vw;
+  color: #ec5242;
+}
+
+#title_subtext {
+  background-color: #f5f5f5;
+  border: 2px solid #fff;
+  padding: 5vw;
+  font-size: 3vw;
+  line-height: 5vw;
+  margin: 8vw auto;
+}
+
+#welcome_section h2 {
+  font-size: 6vw;
+  font-family: 'COCOGOOSE', sans-serif;
+  color: darkslategrey;
+}
+
+#title_location {
+  font-size: 3.5vw;
+  margin: 5px auto;
+}
+
+/* -- Program Section -- */
+
+#program_section {
+  background-image: url(./imgs/pattern_bg.png);
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+  padding: 10vw 0;
+}
+
+#program_section article {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.cell h1 {
+  padding-top: 1vw;
+  font-size: 28px;
+}
+
+#about_article h1 {
+  font-size: 7vw;
+}
+
+#join_btn h2 {
+  font-size: 4vw;
+  text-align: center;
+  padding: 6vw 0;
+}
+
+#partners h2 {
+  text-align: center;
+  padding: 50px 0 15px 0;
+  font-size: 5vw;
+}
+
+#speakers_section h2 {
+  padding: 2vw 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+#program_section article h2 {
+  color: #fff;
+  font-size: 4.5vw;
+  padding: 6vw 0;
+  text-align: center;
+}
+
+hr {
+  border: 0.25px solid #ec5242;
+  width: 60px;
+  margin: auto;
+}
+
+#partners ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5vw 0;
+}
+
+#program_section article ul {
+  width: 100%;
+  margin-top: 12vw;
+}
+
+#partners ul li {
+  display: flex;
+  padding: 2vw 3vw;
+}
+
+#program_section article ul li {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  padding: 5vw;
+  align-items: center;
+  grid-template-columns: 0.8fr 1.5fr 3fr;
+  grid-template-rows: 1fr;
+}
+
+#copyright img {
+  width: 45%;
+  padding: 0 15vw;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+#summit_article img {
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 7vw 15vw;
+  box-sizing: border-box;
+  margin: 5vw auto;
+}
+
+#list_past img {
+  width: 100%;
+}
+
+#copyright_background_about img {
+  content: url(./imgs/cc_logo.svg);
+}
+
+#partners ul li img {
+  width: 22vw;
+  max-width: 180px;
+}
+
+#program_section article ul li img {
+  width: 37.5px;
+  height: 30px;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.cell h3 {
+  font-size: 21px;
+  color: #ec5242;
+  padding: 15px 0;
+  font-style: italic;
+}
+
+#program_section article ul li h3 {
+  color: #ec5242;
+  font-size: 3vw;
+  width: 100px;
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: center;
+}
+
+.cell p {
+  font-size: 16px;
+  padding-top: 15px;
+  line-height: 21px;
+}
+
+#copyright_background_about p {
+  color: #000;
+}
+
+#program_section article ul li p {
+  color: #fff;
+  font-size: 3vw;
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+#full_program {
+  display: none;
+}
+
+#join_btn {
+  background-color: #ec5242;
+  color: #fff;
+  width: 80%;
+  margin: 10vw auto 0 auto;
+}
+
+/* -- Speakers Section -- */
+
+#speakers_section article {
+  padding: 5vw 0;
+}
+
+#speakers_container {
+  max-width: 1100px;
+  display: block;
+  margin: 6vw 0;
+}
+
+.cell {
+  display: flex;
+  margin: 0 2vw 8vw 0;
+  align-items: flex-start;
+}
+
+/* -- Footer Section -- */
+
+#partners_background {
+  background-color: #272a31;
+  padding: 10vw 0;
+}
+
+#partners_background_about {
+  background-color: #272a31;
+}
+
+#partners {
+  color: #fff;
+  width: 90%;
+  margin: auto;
+}
+
+#copyright_background {
+  background-color: #fff;
+}
+
+#copyright {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding: 5vw 0;
+}
+
+#reserved_rights {
+  width: 100%;
+  font-size: 2.5vw;
+  display: flex;
+  align-items: center;
+}
+
+/* ABOUT PAGE */
+
+/* -- About Section */
+
+#about_section {
+  background: #f7f7f8 url(imgs/bg_about_section.png) center no-repeat;
+}
+
+#about_article {
+  text-align: center;
+  padding: 10vw 0;
+}
+
+#contact_description {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  padding: 4vw;
+  margin: 10vw auto 5vw 0;
+  font-size: 3vw;
+  line-height: 5vw;
+}
+
+#contact_message {
+  font-size: 2.9vw;
+  line-height: 5vw;
+}
+
+#contact_email {
+  font-size: 3vw;
+  margin: 5px auto;
+  text-decoration: underline;
+}
+
+/* -- Summit Section Logo -- */
+
+#summit_logo {
+  border-bottom: 1px solid lightgrey;
+}
+
+#summit_article {
+  text-align: center;
+  padding: 6vw 0;
+}
+
+.about_article_h1 {
+  padding: 2vw 0;
+  font-size: 5vw;
+  line-height: 8vw;
+}
+
+.summit_article_p {
+  font-size: 3vw;
+  margin: 4vw auto;
+  line-height: 5vw;
+}
+
+/* -- Past Summits Section -- */
+
+#article_past {
+  text-align: center;
+  padding: 6vw 0 12.5vw 0;
+}
+
+#list_past {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+/* -- Footer About -- */
+
+#copyright_background_about {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .article {
+    width: 80%;
+  }
+
+  #mobile_menu {
+    display: none;
+  }
+
+  #settings_bar {
+    display: block;
+  }
+
+  #nav_bar {
+    display: block;
+    filter: drop-shadow();
+    -webkit-filter: drop-shadow(0 -2px 5px #00000050);
+  }
+
+  /* -- Welcome Section -- */
+
+  #welcome_section {
+    padding: 10vw 0 12vw 0;
+  }
+
+  .title_intro {
+    font-size: 52px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    width: 80%;
+    font-size: 78px;
+    line-height: 82px;
+  }
+
+  #title_subtext {
+    width: 58%;
+    padding: 25px;
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0 35px 0;
+    line-height: 30px;
+    border-width: 5px;
+  }
+
+  #welcome_section h2 {
+    font-size: 40px;
+  }
+
+  #title_location {
+    font-size: 25px;
+    margin: 8px auto 0 auto;
+  }
+
+  /* -- Program Section -- */
+
+  #program_section {
+    padding: 60px 0;
+  }
+
+  #program_section article {
+    width: 80%;
+  }
+
+  .cell h1 {
+    padding-top: 1vw;
+    font-size: 21px;
+  }
+
+  #about_article h1 {
+    margin: auto;
+    font-size: 72px;
+    padding-bottom: 35px;
+  }
+
+  #speakers_section h2 {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  #partners h2 {
+    font-size: 32px;
+    padding: 15px 0 30px 0;
+  }
+
+  #program_section article h2 {
+    font-size: 30px;
+    padding: 15px;
+  }
+
+  #partners ul {
+    flex-wrap: nowrap;
+    margin: 30px auto;
+    justify-content: space-between;
+  }
+
+  #program_section article ul {
+    display: flex;
+    margin: 60px auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #list_past li {
+    margin: 0;
+    width: 49%;
+    display: flex;
+  }
+
+  #partners ul li {
+    padding: 15px 0;
+    width: 15%;
+  }
+
+  #program_section article ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 15px;
+    width: 19.5%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .cell img {
+    margin-right: 25px;
+    box-sizing: border-box;
+    min-width: 175px;
+  }
+
+  #copyright img {
+    width: auto;
+    height: 70px;
+    content: url(./imgs/cc_logo.svg);
+  }
+
+  .cell p {
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 10px;
+  }
+
+  #copyright_background_about p {
+    color: #fff;
+  }
+
+  #copyright_background_about img {
+    content: url(./imgs/cc_logo_white.svg);
+  }
+
+  #summit_article img {
+    width: 680px;
+    padding: 0;
+  }
+
+  #list_past img {
+    width: 100%;
+  }
+
+  #partners ul li img {
+    width: 100%;
+  }
+
+  #program_section article ul li img {
+    width: auto;
+    height: 35px;
+  }
+
+  .cell h3 {
+    font-size: 15px;
+    color: #ec5242;
+    padding: 10px 0;
+    font-style: italic;
+  }
+
+  #program_section article ul li h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  #program_section article ul li p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  #full_program {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #join_btn {
+    display: none;
+  }
+
+  /* -- Speakers Section -- */
+
+  #speakers_section article {
+    padding: 72px 0;
+  }
+
+  #speakers_container {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 0;
+  }
+
+  .cell {
+    display: flex;
+    margin: 0 2vw 5vw 0;
+    align-items: flex-start;
+  }
+
+  /* -- Footer Section -- */
+
+  #partners_background {
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  #partners_background_about {
+    display: none;
+  }
+
+  #partners {
+    width: 80%;
+  }
+
+  #copyright {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  #reserved_rights {
+    font-size: 16px;
+  }
+
+  /* ABOUT PAGE */
+
+  /* -- About Section */
+
+  #about_article .title_intro {
+    display: none;
+  }
+
+  #contact_description {
+    font-size: 21px;
+    line-height: 42px;
+    margin: 35px auto;
+  }
+
+  #contact_message {
+    font-size: 21px;
+    line-height: normal;
+    margin: 10px auto;
+  }
+
+  #contact_email {
+    font-size: 21px;
+  }
+
+  /* -- Summit Section Logo -- */
+
+  .about_article_h1 {
+    font-size: 35px;
+    line-height: normal;
+    padding: 20px 0;
+  }
+
+  .summit_article_p {
+    font-size: 21px;
+    margin: auto;
+    line-height: 35px;
+    padding: 20px 0;
+  }
+
+  /* -- Past Summits Section -- */
+
+  #list_past {
+    margin: 80px auto 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #copyright_background_about {
+    background-color: #272a31;
+  }
+}
